@@ -1,7 +1,7 @@
-import Navbar from "../Components/Nav/navbar"
+import GallerySec from "../Components/gallerysec"
 
 export default function Homepage() {
     return(
-    <Navbar />
+   <GallerySec/>
     )
 }
