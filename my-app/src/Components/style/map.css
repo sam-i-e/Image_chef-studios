@@ -1,0 +1,14 @@
+#map-container {
+    height: 50vh; 
+    margin: auto;
+    max-width: 100%;
+  }
+  
+  .leaflet-container {
+    max-width: 100%;
+  }
+  .mapss{
+    width: auto;
+    margin: 10px 2px 0px 2px;
+    border-radius: 10px;
+  }
