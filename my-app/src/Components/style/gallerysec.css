@@ -1,0 +1,93 @@
+.gallery-container {
+    max-width: auto;
+    margin: 0 10px auto 10px;
+    padding: 40px 20px;
+  }
+  
+  
+  .gallery-heading {
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    opacity: 0; 
+    transform: translateX(-20px); 
+    animation: slideInHeader 1s ease forwards;
+  }
+
+  @keyframes slideInHeader {
+    to {
+      opacity: 1;
+      transform: translateX(0); 
+    }
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+
+  .image-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: scale(1); 
+    transition: transform 0.3s ease; 
+  }
+  
+  .image-item:hover img {
+    transform: scale(1.1); 
+  }
+
+  .explore-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; 
+  }
+  
+  .explore-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #f37814;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .explore-button button:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  
+    .gallery-heading {
+      text-align: center; 
+      opacity: 0; 
+    transform: translateX(-20px); 
+    animation: slideInHeader 1s ease forwards;
+  }
+  
+  @keyframes slideInHeader {
+    to {
+      opacity: 1;
+      transform: translateX(0); 
+    }
+  }
+  }
+  
