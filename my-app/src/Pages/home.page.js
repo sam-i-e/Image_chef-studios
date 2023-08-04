@@ -1,7 +1,7 @@
-import Home from "../Components/home"
+import Slider from "../Components/slider"
 
 export default function Homepage() {
     return(
-   <Home />
+   <Slider />
     )
 }
