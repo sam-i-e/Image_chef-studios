@@ -2,28 +2,30 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 1rem;
+  max-width: 1200px;  
+  padding: 0.5rem;
   position: relative;
-}
-.home-banner-image-container {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-  animation-name: slideInFromTop;
-  animation-duration: 1s;
-  animation-delay: 0.2s; 
-  animation-fill-mode: both;
-  margin-bottom: 50px;
-  margin-top: 100px;
-}
+  
+}  
 
+  .home-banner-image-container {
+    position: absolute;
+    top: -40px; 
+    right: 0;
+    bottom: -60px; 
+    left: 0;
+    width: 100vw; 
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    animation-name: slideInFromTop;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+    background-attachment: scroll; 
+  }
+  
 @keyframes slideInFromTop {
   from {
     transform: translateY(-100%);
@@ -40,6 +42,7 @@
   justify-content: center; 
   text-align: center; 
   margin-top: 20px;
+  margin-left: 40%;
 }
 
 .primary-heading {
@@ -51,6 +54,7 @@
   animation-duration: 1s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
+  text-align: center;
 }
 
 @keyframes slideInLeft {
@@ -68,7 +72,7 @@
     font-size: 1.5rem;
     color: beige;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 5rem;
     animation-name: slideInLeft;
      animation-duration: 1s;
     animation-delay: 0.5s; 
@@ -164,6 +168,7 @@
     text-align: center;
     align-items: center; 
     margin-top: 20px; 
+    margin-left: 10%;
   }
 
   .primary-heading {
