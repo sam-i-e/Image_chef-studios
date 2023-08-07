@@ -1,9 +1,9 @@
-import Map from "../Components/map"
+import Footer from "../Components/shared/footer"
 
 export default function Homepage() {
     return(
    <div className="App">
-    <Map/>
+    <Footer/>
    </div>
     )
 }
