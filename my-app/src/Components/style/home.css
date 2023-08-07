@@ -1,0 +1,196 @@
+.home-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 1rem;
+  position: relative;
+}
+.home-banner-image-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  animation-name: slideInFromTop;
+  animation-duration: 1s;
+  animation-delay: 0.2s; 
+  animation-fill-mode: both;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.home-text-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+  margin-top: 20px;
+}
+
+.primary-heading {
+  font-size: 2rem;
+  color: #f7f3f3;
+  margin-bottom: 1rem;
+  margin-top: 15rem;
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+  
+  .primary-text {
+    font-size: 1.5rem;
+    color: beige;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    animation-name: slideInLeft;
+     animation-duration: 1s;
+    animation-delay: 0.5s; 
+     animation-fill-mode: both;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+  
+  .secondary-button {
+    padding: 1rem 2.5rem;
+    background-color: #0f0e0c;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+    animation-delay: 0.5s; 
+    animation-fill-mode: both;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+  
+  .secondary-button svg {
+    margin-left: 0.75rem;
+    font-size: 1.5rem;
+  }
+  
+  .secondary-button:hover {
+    background-color: #201d1775;
+  }
+  
+  .home-image-container {
+    width: 400px;
+    height: auto;
+    border-radius: 35px;
+    animation-name: slideInRight;
+    animation-duration: 2s;
+    animation-delay: 0.5s; 
+    animation-fill-mode: both;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .home-image-container, img{
+   object-fit: contain;  
+  }
+  
+  /* Mobile view */
+@media (max-width: 768px) {
+  .home-page-container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    justify-content: center; 
+  }
+
+  .home-text-section {
+    text-align: center;
+    align-items: center; 
+    margin-top: 20px; 
+  }
+
+  .primary-heading {
+    font-size: 1.5rem;
+    max-width: 90%;
+    margin: 6rem;
+  }
+
+  .primary-text {
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0.5rem auto;
+    color: rgb(212, 203, 203);
+
+  }
+
+  .secondary-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-left: 0; 
+    margin-top: 3rem; 
+  }
+
+  .home-image-container {
+    width: 80%;
+    max-width: 300px;
+    margin: 2rem auto;
+    border-radius: 25px;
+  }
+}
