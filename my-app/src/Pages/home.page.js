@@ -1,7 +1,7 @@
-import Navbar from "../Components/Nav/navbar"
+
 
 export default function Homepage() {
     return(
-    <Navbar />
+   <h1>Image_chef-studios</h1>
     )
 }
