@@ -1,6 +1,6 @@
 .gallery-container {
     max-width: auto;
-    margin: 0 10px auto 10px;
+    margin: 0 10px auto 10px; 
     padding: 40px 20px;
   }
   
@@ -79,8 +79,8 @@
     .gallery-heading {
       text-align: center; 
       opacity: 0; 
-    transform: translateX(-20px); 
-    animation: slideInHeader 1s ease forwards;
+      transform: translateX(-20px); 
+      animation: slideInHeader 1s ease forwards;
   }
   
   @keyframes slideInHeader {

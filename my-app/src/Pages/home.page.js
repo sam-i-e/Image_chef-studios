@@ -2,6 +2,7 @@ import Navbar from "../Components/Nav/navbar"
 import Home from "../Components/home"
 import Slider from "../Components/slider"
 import GallerySec from "../Components/gallerysec" 
+import Services from "../Components/services"
 
 export default function Homepage() {
     return(
@@ -10,9 +11,7 @@ export default function Homepage() {
             <Home/>
             <Slider />
             <GallerySec />
+            <Services/>
         </div> 
      );   
 };
-
-
-
