@@ -5,6 +5,7 @@ import GallerySec from "../Components/gallerysec"
 import Services from "../Components/services"
 import Testimonial from "../Components/testimonial"
 
+
 export default function Homepage() {
     return(
         <div className="App">
@@ -14,8 +15,12 @@ export default function Homepage() {
             <GallerySec /> 
             <Services/>
             <Testimonial />
+         
         </div> 
      );   
 };
+
+
+
 
 
